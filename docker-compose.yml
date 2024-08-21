@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565" # Expose port 25565 on the host to the container
+    environment:
+      EULA: "TRUE" # Accept the Minecraft EULA
+      MAX_MEMORY: 2G
+    volumes:
+      # Attach the directory on the host machine to the container's /data path
+      - ./data:/data
+

@@ -10,9 +10,9 @@ services:
     environment:
       EULA: "TRUE" # Accept the Minecraft EULA
       MAX_MEMORY: 2G
-      ENABLE_AUTOSTOP: "TRUE"
-      AUTOSTOP_TIMEOUT_INIT: "30"
-      AUTOSTOP_TIMEOUT_EST: "20"
+      # ENABLE_AUTOSTOP: "TRUE"
+      # AUTOSTOP_TIMEOUT_INIT: "30"
+      # AUTOSTOP_TIMEOUT_EST: "20"
     # Important not to auto-restart the server!!!
     restart: "no"
     volumes:

@@ -14,7 +14,7 @@ services:
       # AUTOSTOP_TIMEOUT_INIT: "30"
       # AUTOSTOP_TIMEOUT_EST: "20"
     # Important not to auto-restart the server!!!
-    restart: "no"
+    # restart: "no"
     volumes:
       # Attach the directory on the host machine to the container's /data path
       - ./data:/data
